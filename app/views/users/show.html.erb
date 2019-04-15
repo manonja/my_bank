@@ -1,2 +1,5 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h4><%= @user.full_name %></h4> <br>
+
+<h4>Summary</h4>
+<p>Balance: <%= @user.account.amount_and_currency %></p>
+<p>Savings: <%= @user.saving.amount %></p>
