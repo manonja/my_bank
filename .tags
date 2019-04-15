@@ -1,0 +1,137 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ApplicationMailer	/Users/manon/Development/code/my_bank/app/mailers/application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	class	line:1
+Currency	/Users/manon/Development/code/my_bank/app/models/currency.rb	/^class Currency < ApplicationRecord$/;"	class	line:1
+Saving	/Users/manon/Development/code/my_bank/app/models/saving.rb	/^class Saving < ApplicationRecord$/;"	class	line:1
+Investment	/Users/manon/Development/code/my_bank/app/models/investment.rb	/^class Investment < ApplicationRecord$/;"	class	line:1
+ApplicationRecord	/Users/manon/Development/code/my_bank/app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	class	line:1
+User	/Users/manon/Development/code/my_bank/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:1
+ApplicationJob	/Users/manon/Development/code/my_bank/app/jobs/application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	class	line:1
+ApplicationController	/Users/manon/Development/code/my_bank/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	class	line:1
+ApplicationHelper	/Users/manon/Development/code/my_bank/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
+ApplicationCable	/Users/manon/Development/code/my_bank/app/channels/application_cable/connection.rb	/^module ApplicationCable$/;"	module	line:1
+Connection	/Users/manon/Development/code/my_bank/app/channels/application_cable/connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	class	line:2	class:ApplicationCable
+ApplicationCable	/Users/manon/Development/code/my_bank/app/channels/application_cable/channel.rb	/^module ApplicationCable$/;"	module	line:1
+Channel	/Users/manon/Development/code/my_bank/app/channels/application_cable/channel.rb	/^  class Channel < ActionCable::Channel::Base$/;"	class	line:2	class:ApplicationCable
+InvestmentTest	/Users/manon/Development/code/my_bank/test/models/investment_test.rb	/^class InvestmentTest < ActiveSupport::TestCase$/;"	class	line:3
+SavingTest	/Users/manon/Development/code/my_bank/test/models/saving_test.rb	/^class SavingTest < ActiveSupport::TestCase$/;"	class	line:3
+CurrencyTest	/Users/manon/Development/code/my_bank/test/models/currency_test.rb	/^class CurrencyTest < ActiveSupport::TestCase$/;"	class	line:3
+UserTest	/Users/manon/Development/code/my_bank/test/models/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	class	line:3
+ApplicationSystemTestCase	/Users/manon/Development/code/my_bank/test/application_system_test_case.rb	/^class ApplicationSystemTestCase < ActionDispatch::SystemTestCase$/;"	class	line:3
+one	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^one:$/;"	function	line:3
+first_name	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^  first_name: MyString$/;"	function	line:4
+last_name	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^  last_name: MyString$/;"	function	line:5
+age	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^  age: 1$/;"	function	line:6
+email	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^  email: MyString$/;"	function	line:7
+gender	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^  gender: MyString$/;"	function	line:8
+two	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^two:$/;"	function	line:10
+first_name	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^  first_name: MyString$/;"	function	line:11
+last_name	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^  last_name: MyString$/;"	function	line:12
+age	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^  age: 1$/;"	function	line:13
+email	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^  email: MyString$/;"	function	line:14
+gender	/Users/manon/Development/code/my_bank/test/fixtures/users.yml	/^  gender: MyString$/;"	function	line:15
+one	/Users/manon/Development/code/my_bank/test/fixtures/savings.yml	/^one:$/;"	function	line:3
+amount	/Users/manon/Development/code/my_bank/test/fixtures/savings.yml	/^  amount: 1$/;"	function	line:4
+user	/Users/manon/Development/code/my_bank/test/fixtures/savings.yml	/^  user: one$/;"	function	line:5
+currency	/Users/manon/Development/code/my_bank/test/fixtures/savings.yml	/^  currency: one$/;"	function	line:6
+two	/Users/manon/Development/code/my_bank/test/fixtures/savings.yml	/^two:$/;"	function	line:8
+amount	/Users/manon/Development/code/my_bank/test/fixtures/savings.yml	/^  amount: 1$/;"	function	line:9
+user	/Users/manon/Development/code/my_bank/test/fixtures/savings.yml	/^  user: two$/;"	function	line:10
+currency	/Users/manon/Development/code/my_bank/test/fixtures/savings.yml	/^  currency: two$/;"	function	line:11
+one	/Users/manon/Development/code/my_bank/test/fixtures/currencies.yml	/^one:$/;"	function	line:3
+user	/Users/manon/Development/code/my_bank/test/fixtures/currencies.yml	/^  user: one$/;"	function	line:4
+currency_name	/Users/manon/Development/code/my_bank/test/fixtures/currencies.yml	/^  currency_name: MyString$/;"	function	line:5
+currency_amount	/Users/manon/Development/code/my_bank/test/fixtures/currencies.yml	/^  currency_amount: 1$/;"	function	line:6
+two	/Users/manon/Development/code/my_bank/test/fixtures/currencies.yml	/^two:$/;"	function	line:8
+user	/Users/manon/Development/code/my_bank/test/fixtures/currencies.yml	/^  user: two$/;"	function	line:9
+currency_name	/Users/manon/Development/code/my_bank/test/fixtures/currencies.yml	/^  currency_name: MyString$/;"	function	line:10
+currency_amount	/Users/manon/Development/code/my_bank/test/fixtures/currencies.yml	/^  currency_amount: 1$/;"	function	line:11
+one	/Users/manon/Development/code/my_bank/test/fixtures/investments.yml	/^one:$/;"	function	line:3
+amount	/Users/manon/Development/code/my_bank/test/fixtures/investments.yml	/^  amount: 1$/;"	function	line:4
+user	/Users/manon/Development/code/my_bank/test/fixtures/investments.yml	/^  user: one$/;"	function	line:5
+currency	/Users/manon/Development/code/my_bank/test/fixtures/investments.yml	/^  currency: one$/;"	function	line:6
+bank_rate	/Users/manon/Development/code/my_bank/test/fixtures/investments.yml	/^  bank_rate: 1$/;"	function	line:7
+two	/Users/manon/Development/code/my_bank/test/fixtures/investments.yml	/^two:$/;"	function	line:9
+amount	/Users/manon/Development/code/my_bank/test/fixtures/investments.yml	/^  amount: 1$/;"	function	line:10
+user	/Users/manon/Development/code/my_bank/test/fixtures/investments.yml	/^  user: two$/;"	function	line:11
+currency	/Users/manon/Development/code/my_bank/test/fixtures/investments.yml	/^  currency: two$/;"	function	line:12
+bank_rate	/Users/manon/Development/code/my_bank/test/fixtures/investments.yml	/^  bank_rate: 1$/;"	function	line:13
+ActiveSupport	/Users/manon/Development/code/my_bank/test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	class	line:5
+system!	/Users/manon/Development/code/my_bank/bin/update	/^def system!(*args)$/;"	method	line:8
+system!	/Users/manon/Development/code/my_bank/bin/setup	/^def system!(*args)$/;"	method	line:8
+en	/Users/manon/Development/code/my_bank/config/locales/en.yml	/^en:$/;"	function	line:32
+hello	/Users/manon/Development/code/my_bank/config/locales/en.yml	/^  hello: "Hello world"$/;"	function	line:33
+development	/Users/manon/Development/code/my_bank/config/cable.yml	/^development:$/;"	function	line:1
+adapter	/Users/manon/Development/code/my_bank/config/cable.yml	/^  adapter: async$/;"	function	line:2
+test	/Users/manon/Development/code/my_bank/config/cable.yml	/^test:$/;"	function	line:4
+adapter	/Users/manon/Development/code/my_bank/config/cable.yml	/^  adapter: async$/;"	function	line:5
+production	/Users/manon/Development/code/my_bank/config/cable.yml	/^production:$/;"	function	line:7
+adapter	/Users/manon/Development/code/my_bank/config/cable.yml	/^  adapter: redis$/;"	function	line:8
+url	/Users/manon/Development/code/my_bank/config/cable.yml	/^  url: <%= ENV.fetch("REDIS_URL") { "redis:\/\/localhost:6379\/1" } %>$/;"	function	line:9
+channel_prefix	/Users/manon/Development/code/my_bank/config/cable.yml	/^  channel_prefix: my_bank_production$/;"	function	line:10
+test	/Users/manon/Development/code/my_bank/config/storage.yml	/^test:$/;"	function	line:1
+service	/Users/manon/Development/code/my_bank/config/storage.yml	/^  service: Disk$/;"	function	line:2
+root	/Users/manon/Development/code/my_bank/config/storage.yml	/^  root: <%= Rails.root.join("tmp\/storage") %>$/;"	function	line:3
+local	/Users/manon/Development/code/my_bank/config/storage.yml	/^local:$/;"	function	line:5
+service	/Users/manon/Development/code/my_bank/config/storage.yml	/^  service: Disk$/;"	function	line:6
+root	/Users/manon/Development/code/my_bank/config/storage.yml	/^  root: <%= Rails.root.join("storage") %>$/;"	function	line:7
+MyBank	/Users/manon/Development/code/my_bank/config/application.rb	/^module MyBank$/;"	module	line:9
+Application	/Users/manon/Development/code/my_bank/config/application.rb	/^  class Application < Rails::Application$/;"	class	line:10	class:MyBank
+default	/Users/manon/Development/code/my_bank/config/database.yml	/^default: &default$/;"	function	line:7
+adapter	/Users/manon/Development/code/my_bank/config/database.yml	/^  adapter: sqlite3$/;"	function	line:8
+pool	/Users/manon/Development/code/my_bank/config/database.yml	/^  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>$/;"	function	line:9
+timeout	/Users/manon/Development/code/my_bank/config/database.yml	/^  timeout: 5000$/;"	function	line:10
+development	/Users/manon/Development/code/my_bank/config/database.yml	/^development:$/;"	function	line:12
+database	/Users/manon/Development/code/my_bank/config/database.yml	/^  database: db\/development.sqlite3$/;"	function	line:14
+test	/Users/manon/Development/code/my_bank/config/database.yml	/^test:$/;"	function	line:19
+database	/Users/manon/Development/code/my_bank/config/database.yml	/^  database: db\/test.sqlite3$/;"	function	line:21
+production	/Users/manon/Development/code/my_bank/config/database.yml	/^production:$/;"	function	line:23
+database	/Users/manon/Development/code/my_bank/config/database.yml	/^  database: db\/production.sqlite3$/;"	function	line:25
+README	/Users/manon/Development/code/my_bank/README.md	/^# README$/;"	function	line:1
+html	/Users/manon/Development/code/my_bank/public/422.html	/^<html>$/;"	function	line:2
+head	/Users/manon/Development/code/my_bank/public/422.html	/^<head>$/;"	function	line:3
+title	/Users/manon/Development/code/my_bank/public/422.html	/^  <title>The change you wanted was rejected (422)<\/title>$/;"	function	line:4
+meta	/Users/manon/Development/code/my_bank/public/422.html	/^  <meta name="viewport" content="width=device-width,initial-scale=1">$/;"	function	line:5
+style	/Users/manon/Development/code/my_bank/public/422.html	/^  <style>$/;"	function	line:6
+body	/Users/manon/Development/code/my_bank/public/422.html	/^<body class="rails-default-error-page">$/;"	function	line:57
+div	/Users/manon/Development/code/my_bank/public/422.html	/^  <div class="dialog">$/;"	function	line:59
+div	/Users/manon/Development/code/my_bank/public/422.html	/^    <div>$/;"	function	line:60
+h	/Users/manon/Development/code/my_bank/public/422.html	/^      <h1>The change you wanted was rejected.<\/h1>$/;"	function	line:61
+p	/Users/manon/Development/code/my_bank/public/422.html	/^      <p>Maybe you tried to change something you didn't have access to.<\/p>$/;"	function	line:62
+p	/Users/manon/Development/code/my_bank/public/422.html	/^    <p>If you are the application owner check the logs for more information.<\/p>$/;"	function	line:64
+html	/Users/manon/Development/code/my_bank/public/500.html	/^<html>$/;"	function	line:2
+head	/Users/manon/Development/code/my_bank/public/500.html	/^<head>$/;"	function	line:3
+title	/Users/manon/Development/code/my_bank/public/500.html	/^  <title>We're sorry, but something went wrong (500)<\/title>$/;"	function	line:4
+meta	/Users/manon/Development/code/my_bank/public/500.html	/^  <meta name="viewport" content="width=device-width,initial-scale=1">$/;"	function	line:5
+style	/Users/manon/Development/code/my_bank/public/500.html	/^  <style>$/;"	function	line:6
+body	/Users/manon/Development/code/my_bank/public/500.html	/^<body class="rails-default-error-page">$/;"	function	line:57
+div	/Users/manon/Development/code/my_bank/public/500.html	/^  <div class="dialog">$/;"	function	line:59
+div	/Users/manon/Development/code/my_bank/public/500.html	/^    <div>$/;"	function	line:60
+h	/Users/manon/Development/code/my_bank/public/500.html	/^      <h1>We're sorry, but something went wrong.<\/h1>$/;"	function	line:61
+p	/Users/manon/Development/code/my_bank/public/500.html	/^    <p>If you are the application owner check the logs for more information.<\/p>$/;"	function	line:63
+html	/Users/manon/Development/code/my_bank/public/404.html	/^<html>$/;"	function	line:2
+head	/Users/manon/Development/code/my_bank/public/404.html	/^<head>$/;"	function	line:3
+title	/Users/manon/Development/code/my_bank/public/404.html	/^  <title>The page you were looking for doesn't exist (404)<\/title>$/;"	function	line:4
+meta	/Users/manon/Development/code/my_bank/public/404.html	/^  <meta name="viewport" content="width=device-width,initial-scale=1">$/;"	function	line:5
+style	/Users/manon/Development/code/my_bank/public/404.html	/^  <style>$/;"	function	line:6
+body	/Users/manon/Development/code/my_bank/public/404.html	/^<body class="rails-default-error-page">$/;"	function	line:57
+div	/Users/manon/Development/code/my_bank/public/404.html	/^  <div class="dialog">$/;"	function	line:59
+div	/Users/manon/Development/code/my_bank/public/404.html	/^    <div>$/;"	function	line:60
+h	/Users/manon/Development/code/my_bank/public/404.html	/^      <h1>The page you were looking for doesn't exist.<\/h1>$/;"	function	line:61
+p	/Users/manon/Development/code/my_bank/public/404.html	/^      <p>You may have mistyped the address or the page may have moved.<\/p>$/;"	function	line:62
+p	/Users/manon/Development/code/my_bank/public/404.html	/^    <p>If you are the application owner check the logs for more information.<\/p>$/;"	function	line:64
+name	/Users/manon/Development/code/my_bank/package.json	/^  "name": "my_bank",$/;"	function	line:2
+private	/Users/manon/Development/code/my_bank/package.json	/^  "private": true,$/;"	function	line:3
+dependencies	/Users/manon/Development/code/my_bank/package.json	/^  "dependencies": {}$/;"	function	line:4
+CreateInvestments	/Users/manon/Development/code/my_bank/db/migrate/20190415092836_create_investments.rb	/^class CreateInvestments < ActiveRecord::Migration[5.2]$/;"	class	line:1
+change	/Users/manon/Development/code/my_bank/db/migrate/20190415092836_create_investments.rb	/^  def change$/;"	method	line:2	class:CreateInvestments
+CreateSavings	/Users/manon/Development/code/my_bank/db/migrate/20190415092726_create_savings.rb	/^class CreateSavings < ActiveRecord::Migration[5.2]$/;"	class	line:1
+change	/Users/manon/Development/code/my_bank/db/migrate/20190415092726_create_savings.rb	/^  def change$/;"	method	line:2	class:CreateSavings
+CreateCurrencies	/Users/manon/Development/code/my_bank/db/migrate/20190415090921_create_currencies.rb	/^class CreateCurrencies < ActiveRecord::Migration[5.2]$/;"	class	line:1
+change	/Users/manon/Development/code/my_bank/db/migrate/20190415090921_create_currencies.rb	/^  def change$/;"	method	line:2	class:CreateCurrencies
+CreateUsers	/Users/manon/Development/code/my_bank/db/migrate/20190415090821_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[5.2]$/;"	class	line:1
+change	/Users/manon/Development/code/my_bank/db/migrate/20190415090821_create_users.rb	/^  def change$/;"	method	line:2	class:CreateUsers

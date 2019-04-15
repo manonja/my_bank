@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 1
+  user: one
+  currency: one
+  bank_rate: 1
+
+two:
+  amount: 1
+  user: two
+  currency: two
+  bank_rate: 1
