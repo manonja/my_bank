@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_15_122532) do
+ActiveRecord::Schema.define(version: 2019_04_15_135758) do
 
   create_table "accounts", force: :cascade do |t|
     t.integer "user_id"
@@ -24,21 +24,21 @@ ActiveRecord::Schema.define(version: 2019_04_15_122532) do
   create_table "investments", force: :cascade do |t|
     t.integer "amount"
     t.integer "user_id"
-    t.integer "currency_id"
+    t.integer "account_id"
     t.integer "bank_rate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["currency_id"], name: "index_investments_on_currency_id"
+    t.index ["account_id"], name: "index_investments_on_account_id"
     t.index ["user_id"], name: "index_investments_on_user_id"
   end
 
   create_table "savings", force: :cascade do |t|
     t.integer "amount"
     t.integer "user_id"
-    t.integer "currency_id"
+    t.integer "account_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["currency_id"], name: "index_savings_on_currency_id"
+    t.index ["account_id"], name: "index_savings_on_account_id"
     t.index ["user_id"], name: "index_savings_on_user_id"
   end
 

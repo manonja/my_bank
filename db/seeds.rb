@@ -10,6 +10,8 @@ require 'irbtools'
 
 User.destroy_all
 Account.destroy_all
+Saving.destroy_all
+Investment.destroy_all
 
 
 100.times do
@@ -25,6 +27,19 @@ Account.destroy_all
     currency_name: Faker::Currency.name,
     amount: Faker::Number.between(100, 1_000_000),
     user_id: user.id
+  )
+
+  saving=Saving.create(
+    amount: Faker::Number.between(100, 1_000_000),
+    user_id: user.id,
+    account_id: account.id
+  )
+
+  investment=Investment.create(
+    amount: Faker::Number.between(100, 1_000_000),
+    user_id: user.id,
+    account_id: account.id,
+    bank_rate: Faker::Number.decimal(1)
   )
 
 end
