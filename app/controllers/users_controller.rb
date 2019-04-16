@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @account = Account.new
   end
 
   def show
@@ -12,7 +13,16 @@ class UsersController < ApplicationController
   end
 
   def create
+
     @user = User.create(user_params)
+    if @user.save && @user.account == nil
+      # here we can create a home page
+      redirect_to new_account_path
+    elsif @user.save
+      redirect_to @user
+    else
+      render :new
+    end
   end
 
   def edit
@@ -22,6 +32,8 @@ class UsersController < ApplicationController
 
   def update
     @user = User.update(user_params)
+
+    redirect_to @user
   end
 
   def delete
@@ -33,4 +45,5 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:first_name, :last_name, :age, :email, :gender)
   end
+
 end

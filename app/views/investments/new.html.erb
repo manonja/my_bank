@@ -1,0 +1,17 @@
+<h1>New investment</h1>
+<%= form_for @investment do |f| %>
+
+  <%= f.label :amount %>
+  <%= f.text_field :amount %> <br>
+  <%= f.label :user_id %>
+  <%= f.number_field :user_id %> <br>
+  <%= f.label :account_id %>
+  <%= f.number_field :account_id %> <br>
+  <%= f.label :bank_rate %>
+  <%= f.number_field :bank_rate %> <br>
+
+
+
+  <%= f.submit 'Invest'%>
+
+<%end %>
