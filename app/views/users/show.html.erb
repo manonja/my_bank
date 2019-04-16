@@ -6,5 +6,5 @@
 <p>Savings: <%= @user.saving.amount %></p>
 <p>Investment(s): </p>
   <% @user.investments.each do |investment| %>
-    <li> <%= investment.amount  %></li>
+    <li> <%= investment.amount  %> <%= investment.currency_name %></li>
   <%end%>

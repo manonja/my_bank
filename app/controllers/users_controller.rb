@@ -16,6 +16,12 @@ class UsersController < ApplicationController
 
     @user = User.create(user_params)
     if @user.save && @user.account == nil
+      @account = Account.create(user_id: @user.id, currency_name: 'dollars' , amount: 100)
+      @saving = Saving.create(amount: 0, user_id: @user.id, account_id: @account.id)
+      @investment = Investment.create(amount: 0, user_id: @user.id, account_id: @account_id, bank_rate: 0)
+      @user.account = @account
+      @user.saving = @saving
+      @user.investments[0] = @investment
       # here we can create a home page
       redirect_to new_account_path
     elsif @user.save

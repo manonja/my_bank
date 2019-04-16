@@ -10,22 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_15_135758) do
+ActiveRecord::Schema.define(version: 2019_04_16_083743) do
 
   create_table "accounts", force: :cascade do |t|
     t.integer "user_id"
-    t.string "currency_name"
-    t.integer "amount"
+    t.string "currency_name", default: "Cat Coins"
+    t.integer "amount", default: 100
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_accounts_on_user_id"
   end
 
   create_table "investments", force: :cascade do |t|
-    t.integer "amount"
+    t.integer "amount", default: 0
     t.integer "user_id"
     t.integer "account_id"
-    t.integer "bank_rate"
+    t.integer "bank_rate", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["account_id"], name: "index_investments_on_account_id"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2019_04_15_135758) do
   end
 
   create_table "savings", force: :cascade do |t|
-    t.integer "amount"
+    t.integer "amount", default: 0
     t.integer "user_id"
     t.integer "account_id"
     t.datetime "created_at", null: false
