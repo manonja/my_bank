@@ -1,0 +1,6 @@
+<h4><%= @account.user.full_name %></h4> <br>
+
+<h4>Summary</h4>
+<p>Balance: <%= @account.amount %> <%= @account.currency_name %></p>
+
+<%= button_to "Invest", new_investment_path %>

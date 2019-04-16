@@ -1,5 +1,10 @@
 <h4><%= @user.full_name %></h4> <br>
 
 <h4>Summary</h4>
-<p>Balance: <%= @user.account.amount_and_currency %></p>
+<p>Balance: <%= @user.account.amount %></p>
+
 <p>Savings: <%= @user.saving.amount %></p>
+<p>Investment(s): </p>
+  <% @user.investments.each do |investment| %>
+    <li> <%= investment.amount  %> <%= investment.currency_name %></li>
+  <%end%>
