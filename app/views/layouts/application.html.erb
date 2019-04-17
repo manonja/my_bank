@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <%= @current_user.full_name if @current_user %> 
    <% if @current_user %>
      <%= button_to("Logout", {action: "logout", controller: "sessions"},method: "delete") %>
    <% else %>

@@ -20,6 +20,7 @@ gem 'irbtools', require: 'irbtools/binding'
 gem 'bootstrap', '~> 4.3.1'
 gem "bootstrap_form", ">= 4.2.0"
 gem 'bcrypt', "~> 3.1.7"
+gem 'gravtastic'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

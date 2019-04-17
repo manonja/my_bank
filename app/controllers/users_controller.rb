@@ -14,15 +14,13 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
-
-    if @user.account == nil
+    
+    if @user.save
       @account = Account.create(user_id: @user.id)
       @saving = Saving.create(user_id: @user.id, account_id: @account.id)
       # @investment = Investment.create(user_id: @user.id, account_id: @account_id)
 
       redirect_to user_path(@user)
-    elsif @user.save
-        redirect_to user_path(@user)
     else
       render 'new'
     end
