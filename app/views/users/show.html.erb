@@ -3,6 +3,7 @@
 <h4>Summary</h4>
 <p>Your balance: <%= @user.account.amount %> <%= @user.account.currency_name %> </p>
 
-<p>Your savings: <%= @user.saving.amount %> <%= @user.account.currency_name %></p>
 
-<p>Your investment(s): </p>
+<p>Your savings: <%= @user.saving.amount %> <%= @user.account.currency_name %></p> <%= button_to("Savings", saving_path(@user), method: :get, :class => "btn btn-success") %>
+
+<%= button_to("Invest now!", investment_path(@user), method: :get, :class => "btn btn-success") %>
