@@ -1,4 +1,7 @@
-<h4> <%= @user.full_name %></h4> <br>
+
+<h3><%= @current_user.full_name if @current_user %></h3>
+
+
 
 <h4>Summary</h4>
 <p>Your balance: <%= current_user.account.amount %> <%= current_user.account.currency_name %> </p>
@@ -6,6 +9,22 @@
 
 <p>Your savings: <%= current_user.saving.amount %> <%= current_user.account.currency_name %></p> <%= button_to("Savings", saving_path(@user), method: :get, :class => "btn btn-success") %>
 
-<%= button_to("Invest now!", investment_path(@user), method: :get, :class => "btn btn-success") %>
+<% if current_user.investments[0] == nil %>
+  <p>You don't have any investments yet, <%= button_to("make one now!", investment_path(@user), method: :get, :class => "btn btn-success") %>
+ </p>
+<% else %>
+  <% current_user.investments.each do |investment| %>
+    <%= investment.amount %> <%= current_user.account.currency_name %>
+  <% end %>
+<%end %>
 
 <%= button_to("Transfer money", new_transfer_path, method: :get, :class => "btn btn-success") %>
+
+
+<div class="bottom">
+  <% if @current_user %>
+    <%= button_to("Logout", {action: "logout", controller: "sessions"}, method: "delete", class:"btn btn-outline-primary") %>
+  <% else %>
+    <%= button_to "Login", login_form_path, method: :get, :class => "btn btn-outline-success"%>
+  <% end %>
+</div>

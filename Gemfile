@@ -17,10 +17,12 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'irbtools', require: 'irbtools/binding'
-gem 'bootstrap', '~> 4.3.1'
-gem "bootstrap_form", ">= 4.2.0"
 gem 'bcrypt', "~> 3.1.7"
 gem 'gravtastic'
+
+gem 'bootstrap', '~> 4.0'
+gem 'jquery-rails'
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
