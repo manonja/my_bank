@@ -1,9 +1,11 @@
 <h4> <%= @user.full_name %></h4> <br>
 
 <h4>Summary</h4>
-<p>Your balance: <%= @user.account.amount %> <%= @user.account.currency_name %> </p>
+<p>Your balance: <%= current_user.account.amount %> <%= current_user.account.currency_name %> </p>
 
 
-<p>Your savings: <%= @user.saving.amount %> <%= @user.account.currency_name %></p> <%= button_to("Savings", saving_path(@user), method: :get, :class => "btn btn-success") %>
+<p>Your savings: <%= current_user.saving.amount %> <%= current_user.account.currency_name %></p> <%= button_to("Savings", saving_path(@user), method: :get, :class => "btn btn-success") %>
 
 <%= button_to("Invest now!", investment_path(@user), method: :get, :class => "btn btn-success") %>
+
+<%= button_to("Transfer money", new_transfer_path, method: :get, :class => "btn btn-success") %>

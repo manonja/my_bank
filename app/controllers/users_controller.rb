@@ -13,9 +13,11 @@ class UsersController < ApplicationController
   end
 
   def create
+
     @user = User.create(user_params)
-    
+
     if @user.save
+      session[:user_id] = @user.id
       @account = Account.create(user_id: @user.id)
       @saving = Saving.create(user_id: @user.id, account_id: @account.id)
       # @investment = Investment.create(user_id: @user.id, account_id: @account_id)

@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get 'transfers/index'
+  get 'transfers/show'
+  get 'transfers/new'
   root 'home#index'
-  resources :users, :accounts, :savings, :investments
+  resources :users, :accounts, :savings, :investments, :transfers
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   #signup routes

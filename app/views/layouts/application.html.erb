@@ -9,12 +9,12 @@
   </head>
 
   <body>
-    <%= @current_user.full_name if @current_user %> 
-   <% if @current_user %>
-     <%= button_to("Logout", {action: "logout", controller: "sessions"},method: "delete") %>
-   <% else %>
-     <%= link_to "Login", "/login_form"%>
-   <% end %>
+    <%= @current_user.full_name if @current_user %>
+     <% if @current_user %>
+       <%= button_to("Logout", {action: "logout", controller: "sessions"},method: "delete") %>
+     <% else %>
+       <%= link_to "Login", "/login_form"%>
+     <% end %>
 
     <%= yield %>
   </body>

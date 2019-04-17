@@ -1,11 +1,11 @@
 class User < ApplicationRecord
 
   # has_gravatar
-
   has_secure_password
   has_one :account
   has_one :saving
   has_many :investments
+  has_many :transfers
 
   validates :first_name, :last_name, presence: true
   validates :email, presence: true, uniqueness: true
