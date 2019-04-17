@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_16_110045) do
+ActiveRecord::Schema.define(version: 2019_04_17_100537) do
 
   create_table "accounts", force: :cascade do |t|
     t.integer "user_id"
@@ -40,6 +40,15 @@ ActiveRecord::Schema.define(version: 2019_04_16_110045) do
     t.datetime "updated_at", null: false
     t.index ["account_id"], name: "index_savings_on_account_id"
     t.index ["user_id"], name: "index_savings_on_user_id"
+  end
+
+  create_table "transfers", force: :cascade do |t|
+    t.string "receiver_id"
+    t.string "sender_id"
+    t.string "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
   end
 
   create_table "users", force: :cascade do |t|

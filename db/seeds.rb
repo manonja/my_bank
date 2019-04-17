@@ -20,7 +20,8 @@ Investment.destroy_all
     last_name: Faker::Name.last_name,
     age: Faker::Number.between(18, 99),
     email: Faker::Internet.email,
-    gender: Faker::Gender.binary_type
+    gender: Faker::Gender.binary_type,
+    password: Faker::Name.first_name
     )
 
   account=Account.create(

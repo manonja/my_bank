@@ -1,0 +1,9 @@
+<h1>Your transfers </h1>
+
+<ul>
+  <% @transfers.each do |t|  %>
+    <li> <%= t.name %></li>
+  <% end %>
+</ul>
+
+<%= button_to("Make a new transfer", transfer_path_new(@user), method: :get, :class => "btn btn-success") %>
