@@ -1,17 +1,36 @@
-<h1>New investment</h1>
-<%= form_for @investment do |f| %>
 
+<h1>Add an Investment:</h1>
+
+<p>Company name: <%=@drinkbox.name%></p>
+<p>Rate: <%=@drinkbox.rate%>%</p>
+<p>Company Worth: £<%=@drinkbox.worth%></p>
+
+<%= form_for @investment  do |f| %>
   <%= f.label :amount %>
-  <%= f.text_field :amount %> <br>
-  <%= f.label :user_id %>
-  <%= f.number_field :user_id %> <br>
-  <%= f.label :account_id %>
-  <%= f.number_field :account_id %> <br>
-  <%= f.label :bank_rate %>
-  <%= f.number_field :bank_rate %> <br>
+  <%= f.number_field :amount %>
+  <br />
+  <%= f.submit %>
+<%end%>
+
+<p>Company name: <%=@starbucks.name%></p>
+<p>Rate: <%=@starbucks.rate%>%</p>
+<p>Company Worth: £<%=@starbucks.worth%></p>
+
+<p>Company name: <%=@monzo.name%></p>
+<p>Rate: <%=@monzo.rate%>%</p>
+<p>Company Worth: £<%=@monzo.worth%></p>
+
+<p>Company name: <%=@seabin.name%></p>
+<p>Rate: <%=@seabin.rate%>%</p>
+<p>Company Worth: £<%=@seabin.worth%></p>
+
+<p>Company name: <%=@sourceai.name%></p>
+<p>Rate: <%=@sourceai.rate%>%</p>
+<p>Company Worth: £<%=@sourceai.worth%></p>
 
 
 
-  <%= f.submit 'Invest'%>
 
-<%end %>
+
+
+    

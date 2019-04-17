@@ -1,0 +1,24 @@
+<h3>Make a new saving -- <%=@user.first_name %>!</h3> <br>
+
+<h4>Your total Savings -- <%=@saving.amount%></h4>
+
+<h4>Make a saving below!</h4>
+
+
+  <%= form_for @saving, url: add_saving_path(@saving) do |f|%>
+    <%= f.label :amount%>
+    <%= f.number_field :amount%>
+    <%= f.submit%>
+  <% end%>
+
+
+
+
+
+
+
+
+<p><%= link_to "Account summary", user_path(@user)%></p>
+
+
+
