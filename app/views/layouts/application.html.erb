@@ -4,17 +4,22 @@
     <title>MyBank</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>  </head>
 
   <body>
-    <%= @current_user.full_name if @current_user %>
-     <% if @current_user %>
-       <%= button_to("Logout", {action: "logout", controller: "sessions"},method: "delete") %>
-     <% else %>
-       <%= link_to "Login", "/login_form"%>
-     <% end %>
+
+    <span class="navbar navbar-expand-lg navbar-trans navbar-inverse" style="color: #000">
+      <a class="navbar-brand" href="/">Home</a>
+          <% if @current_user %>
+            <%= link_to @current_user.full_name, user_path %>
+            <%= button_to "Logout", logout_path, method: "delete", controller: "sessions", class: "btn btn-dark btn-sm", style: "form-inline my-2 my-lg-0" %>
+          <% else %>
+            <%= link_to "Login", login_form_path, method: "get", class: "btn btn-dark btn-sm", style: "form-inline my-2 my-lg-0" %>
+          <% end %>
+    </span>
+
 
     <%= yield %>
   </body>

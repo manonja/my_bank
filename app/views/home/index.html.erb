@@ -1,9 +1,13 @@
-<% if current_user %>
-  Logged in as <%= current_user.email %>
-  <%= link_to 'logout', logout_path %>, 
-<% else %>
-  <%= link_to 'SignUp', signup_path %> or
-  <%= link_to 'LogIn', login_path %>
-<% end %>
+
 
 <p id=”notice”><%= notice %></p>
+
+<div class="jumbotron" style="opacity: 0.7; ">
+  <h1 class="display-4">Welcome to the Flatiron Cat Coins App! </h1>
+  <p class="lead">Sign up and get 100 cat coins. </p>
+  <hr class="my-4">
+  <p>Reinvest them and get to the next level!</p>
+  <p class="lead">
+    <%= button_to "SIGN-UP", signup_path, :method => 'get', class: "btn btn-outline-primary"%>
+  </p>
+</div>
