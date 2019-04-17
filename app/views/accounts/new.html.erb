@@ -1,0 +1,15 @@
+<h1>Set up your account</h1>
+<%= form_for @account do |f| %>
+
+  <%= f.label :email_adress %>
+  <%= f.text_field :email_adress %> <br>
+  <%= f.label :currency %>
+  <%= f.text_field :currency_name %> <br>
+  <%= f.label :amount %>
+  <%= f.number_field :amount %> <br>
+
+
+
+  <%= f.submit 'Set up account'%>
+
+<%end %>

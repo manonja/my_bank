@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_17_094154) do
+
+ActiveRecord::Schema.define(version: 2019_04_17_100537) do
+
 
   create_table "accounts", force: :cascade do |t|
     t.integer "user_id"
-    t.string "currency_name"
-    t.integer "amount"
+    t.string "currency_name", default: "Cat Coins"
+    t.integer "amount", default: 100
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_accounts_on_user_id"
@@ -32,7 +34,7 @@ ActiveRecord::Schema.define(version: 2019_04_17_094154) do
   end
 
   create_table "investments", force: :cascade do |t|
-    t.integer "amount"
+    t.integer "amount", default: 0
     t.integer "user_id"
     t.integer "account_id"
     t.datetime "created_at", null: false
@@ -44,13 +46,22 @@ ActiveRecord::Schema.define(version: 2019_04_17_094154) do
   end
 
   create_table "savings", force: :cascade do |t|
-    t.integer "amount"
+    t.integer "amount", default: 0
     t.integer "user_id"
     t.integer "account_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["account_id"], name: "index_savings_on_account_id"
     t.index ["user_id"], name: "index_savings_on_user_id"
+  end
+
+  create_table "transfers", force: :cascade do |t|
+    t.string "receiver_id"
+    t.string "sender_id"
+    t.string "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
   end
 
   create_table "users", force: :cascade do |t|
@@ -61,6 +72,7 @@ ActiveRecord::Schema.define(version: 2019_04_17_094154) do
     t.string "gender"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
 end

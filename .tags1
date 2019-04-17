@@ -1,0 +1,12 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+TransfersController	/Users/manon/Development/code/my_bank/app/controllers/transfers_controller.rb	/^class TransfersController < ApplicationController$/;"	class	line:1
+index	/Users/manon/Development/code/my_bank/app/controllers/transfers_controller.rb	/^  def index$/;"	method	line:2	class:TransfersController
+show	/Users/manon/Development/code/my_bank/app/controllers/transfers_controller.rb	/^  def show$/;"	method	line:6	class:TransfersController
+new	/Users/manon/Development/code/my_bank/app/controllers/transfers_controller.rb	/^  def new$/;"	method	line:10	class:TransfersController
+create	/Users/manon/Development/code/my_bank/app/controllers/transfers_controller.rb	/^  def create$/;"	method	line:15	class:TransfersController
+transfer_params	/Users/manon/Development/code/my_bank/app/controllers/transfers_controller.rb	/^  def transfer_params$/;"	method	line:30	class:TransfersController

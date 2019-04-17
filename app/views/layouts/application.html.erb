@@ -4,12 +4,18 @@
     <title>MyBank</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= @current_user.full_name if @current_user %>
+     <% if @current_user %>
+       <%= button_to("Logout", {action: "logout", controller: "sessions"},method: "delete") %>
+     <% else %>
+       <%= link_to "Login", "/login_form"%>
+     <% end %>
+
     <%= yield %>
   </body>
 </html>

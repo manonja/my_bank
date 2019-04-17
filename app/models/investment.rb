@@ -16,4 +16,10 @@ class Investment < ApplicationRecord
   #   current_amount - amount
   # end
 
+
+
+  # def currency
+  #   self.amount.to_s + ' ' +
+  # end
+
 end
