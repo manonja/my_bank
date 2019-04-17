@@ -1,0 +1,17 @@
+<p id=”alert”><%= alert %></p>
+<h1>Login</h1>
+
+
+<%= form_for :user, url: "login", method: "post" do |f|%>
+<div class=”field”>
+  <%= f.label :email%>
+  <%= f.text_field :email%><br>
+  </div>
+  <div class=”field”>
+  <%= f.label :password%>
+  <%= f.password_field :password%><br>
+  </div>
+  <div class=”actions”>
+  <%= f.submit "Log In"%>
+  </div>
+<% end%>

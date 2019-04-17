@@ -10,7 +10,6 @@ Saving	/Users/manon/Development/code/my_bank/app/models/saving.rb	/^class Saving
 Investment	/Users/manon/Development/code/my_bank/app/models/investment.rb	/^class Investment < ApplicationRecord$/;"	class	line:1
 ApplicationRecord	/Users/manon/Development/code/my_bank/app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	class	line:1
 ApplicationJob	/Users/manon/Development/code/my_bank/app/jobs/application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	class	line:1
-ApplicationController	/Users/manon/Development/code/my_bank/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	class	line:1
 ApplicationHelper	/Users/manon/Development/code/my_bank/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
 ApplicationCable	/Users/manon/Development/code/my_bank/app/channels/application_cable/connection.rb	/^module ApplicationCable$/;"	module	line:1
 Connection	/Users/manon/Development/code/my_bank/app/channels/application_cable/connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	class	line:2	class:ApplicationCable
@@ -134,10 +133,6 @@ CreateCurrencies	/Users/manon/Development/code/my_bank/db/migrate/20190415090921
 change	/Users/manon/Development/code/my_bank/db/migrate/20190415090921_create_currencies.rb	/^  def change$/;"	method	line:2	class:CreateCurrencies
 CreateUsers	/Users/manon/Development/code/my_bank/db/migrate/20190415090821_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[5.2]$/;"	class	line:1
 change	/Users/manon/Development/code/my_bank/db/migrate/20190415090821_create_users.rb	/^  def change$/;"	method	line:2	class:CreateUsers
-Account	/Users/manon/Development/code/my_bank/app/models/account.rb	/^class Account < ApplicationRecord$/;"	class	line:1
-amount_and_currency	/Users/manon/Development/code/my_bank/app/models/account.rb	/^  def amount_and_currency$/;"	method	line:4	class:Account
-email_adress=	/Users/manon/Development/code/my_bank/app/models/account.rb	/^  def email_adress=(email)$/;"	method	line:9	class:Account
-email_adress	/Users/manon/Development/code/my_bank/app/models/account.rb	/^def email_adress$/;"	method	line:14	class:Account
 AccountsController	/Users/manon/Development/code/my_bank/app/controllers/accounts_controller.rb	/^class AccountsController < ApplicationController$/;"	class	line:1
 index	/Users/manon/Development/code/my_bank/app/controllers/accounts_controller.rb	/^  def index$/;"	method	line:3	class:AccountsController
 new	/Users/manon/Development/code/my_bank/app/controllers/accounts_controller.rb	/^  def new$/;"	method	line:7	class:AccountsController
@@ -158,14 +153,37 @@ AddDefaultValueToInvestments	/Users/manon/Development/code/my_bank/db/migrate/20
 change	/Users/manon/Development/code/my_bank/db/migrate/20190416083631_add_default_value_to_investments.rb	/^  def change$/;"	method	line:2	class:AddDefaultValueToInvestments
 AddDefaultValueToSavings	/Users/manon/Development/code/my_bank/db/migrate/20190416083743_add_default_value_to_savings.rb	/^class AddDefaultValueToSavings < ActiveRecord::Migration[5.2]$/;"	class	line:1
 change	/Users/manon/Development/code/my_bank/db/migrate/20190416083743_add_default_value_to_savings.rb	/^  def change$/;"	method	line:2	class:AddDefaultValueToSavings
+SignupController	/Users/manon/Development/code/my_bank/app/controllers/signups_controller.rb	/^class SignupController < ApplicationController$/;"	class	line:1
+new	/Users/manon/Development/code/my_bank/app/controllers/signups_controller.rb	/^  def new$/;"	method	line:2	class:SignupController
+create	/Users/manon/Development/code/my_bank/app/controllers/signups_controller.rb	/^  def create$/;"	method	line:5	class:SignupController
+account_params	/Users/manon/Development/code/my_bank/app/controllers/signups_controller.rb	/^  def account_params$/;"	method	line:18	class:SignupController
+SignupController	/Users/manon/Development/code/my_bank/app/controllers/signup_controller.rb	/^class SignupController < ApplicationController$/;"	class	line:1
+new	/Users/manon/Development/code/my_bank/app/controllers/signup_controller.rb	/^  def new$/;"	method	line:2	class:SignupController
+create	/Users/manon/Development/code/my_bank/app/controllers/signup_controller.rb	/^  def create$/;"	method	line:5	class:SignupController
+user_params	/Users/manon/Development/code/my_bank/app/controllers/signup_controller.rb	/^  def user_params$/;"	method	line:18	class:SignupController
+AddColumnToUsers	/Users/manon/Development/code/my_bank/db/migrate/20190416105141_add_column_to_users.rb	/^class AddColumnToUsers < ActiveRecord::Migration[5.2]$/;"	class	line:1
+change	/Users/manon/Development/code/my_bank/db/migrate/20190416105141_add_column_to_users.rb	/^  def change$/;"	method	line:2	class:AddColumnToUsers
+ChangeColumnInUsers	/Users/manon/Development/code/my_bank/db/migrate/20190416110045_change_column_in_users.rb	/^class ChangeColumnInUsers < ActiveRecord::Migration[5.2]$/;"	class	line:1
+change	/Users/manon/Development/code/my_bank/db/migrate/20190416110045_change_column_in_users.rb	/^  def change$/;"	method	line:2	class:ChangeColumnInUsers
 User	/Users/manon/Development/code/my_bank/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:1
-full_name	/Users/manon/Development/code/my_bank/app/models/user.rb	/^  def full_name$/;"	method	line:9	class:User
+full_name	/Users/manon/Development/code/my_bank/app/models/user.rb	/^  def full_name$/;"	method	line:11	class:User
+Account	/Users/manon/Development/code/my_bank/app/models/account.rb	/^class Account < ApplicationRecord$/;"	class	line:1
+amount_and_currency	/Users/manon/Development/code/my_bank/app/models/account.rb	/^  def amount_and_currency$/;"	method	line:4	class:Account
+email_adress=	/Users/manon/Development/code/my_bank/app/models/account.rb	/^  def email_adress=(email)$/;"	method	line:9	class:Account
+email_adress	/Users/manon/Development/code/my_bank/app/models/account.rb	/^def email_adress$/;"	method	line:14	class:Account
 UsersController	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	class	line:1
 index	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def index$/;"	method	line:2	class:UsersController
 new	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def new$/;"	method	line:6	class:UsersController
 show	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def show$/;"	method	line:11	class:UsersController
 create	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def create$/;"	method	line:15	class:UsersController
-edit	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def edit$/;"	method	line:34	class:UsersController
-update	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def update$/;"	method	line:39	class:UsersController
-delete	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def delete$/;"	method	line:45	class:UsersController
-user_params	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def user_params$/;"	method	line:51	class:UsersController
+profile	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def profile$/;"	method	line:31	class:UsersController
+edit	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def edit$/;"	method	line:38	class:UsersController
+update	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def update$/;"	method	line:43	class:UsersController
+delete	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def delete$/;"	method	line:49	class:UsersController
+user_params	/Users/manon/Development/code/my_bank/app/controllers/users_controller.rb	/^  def user_params$/;"	method	line:55	class:UsersController
+SessionsController	/Users/manon/Development/code/my_bank/app/controllers/sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	class	line:1
+login_form	/Users/manon/Development/code/my_bank/app/controllers/sessions_controller.rb	/^  def login_form$/;"	method	line:2	class:SessionsController
+login	/Users/manon/Development/code/my_bank/app/controllers/sessions_controller.rb	/^  def login$/;"	method	line:5	class:SessionsController
+logout	/Users/manon/Development/code/my_bank/app/controllers/sessions_controller.rb	/^  def logout$/;"	method	line:15	class:SessionsController
+ApplicationController	/Users/manon/Development/code/my_bank/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	class	line:1
+current_user	/Users/manon/Development/code/my_bank/app/controllers/application_controller.rb	/^ def current_user$/;"	method	line:7	class:ApplicationController

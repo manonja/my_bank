@@ -21,7 +21,7 @@ Investment.destroy_all
     age: Faker::Number.between(18, 99),
     email: Faker::Internet.email,
     gender: Faker::Gender.binary_type
-  )
+    )
 
   account=Account.create(
     currency_name: Faker::Currency.name,
