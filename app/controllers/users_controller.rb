@@ -13,23 +13,27 @@ class UsersController < ApplicationController
   end
 
   def create
-
     @user = User.create(user_params)
-    if @user.save && @user.account == nil
-      @account = Account.create(user_id: @user.id, currency_name: 'dollars' , amount: 100)
-      @saving = Saving.create(amount: 0, user_id: @user.id, account_id: @account.id)
-      @investment = Investment.create(amount: 0, user_id: @user.id, account_id: @account_id, bank_rate: 0)
-      @user.account = @account
-      @user.saving = @saving
-      @user.investments[0] = @investment
-      # here we can create a home page
-      redirect_to new_account_path
+
+    if @user.account == nil
+      @account = Account.create(user_id: @user.id)
+      @saving = Saving.create(user_id: @user.id, account_id: @account.id)
+      # @investment = Investment.create(user_id: @user.id, account_id: @account_id)
+
+      redirect_to user_path(@user)
     elsif @user.save
-      redirect_to @user
+        redirect_to user_path(@user)
     else
-      render :new
+      render 'new'
     end
   end
+
+  def profile
+   if !@current_user
+     flash[:notice] = "Please sign in to continue!"
+     redirect_to "/login_form"
+   end
+ end
 
   def edit
     @user = User.find(params[:id])
@@ -49,7 +53,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :age, :email, :gender)
+    params.require(:user).permit(:first_name, :last_name, :age, :email, :gender, :password)
   end
 
 end
