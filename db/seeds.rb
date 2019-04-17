@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 require 'irbtools'
 
@@ -12,7 +5,6 @@ User.destroy_all
 Account.destroy_all
 Saving.destroy_all
 Investment.destroy_all
-
 
 100.times do
   user =User.create(
@@ -22,24 +14,26 @@ Investment.destroy_all
     email: Faker::Internet.email,
     gender: Faker::Gender.binary_type
   )
-
   account=Account.create(
     currency_name: Faker::Currency.name,
     amount: Faker::Number.between(100, 1_000_000),
     user_id: user.id
   )
-
   saving=Saving.create(
     amount: Faker::Number.between(100, 1_000_000),
     user_id: user.id,
     account_id: account.id
   )
-
   investment=Investment.create(
     amount: Faker::Number.between(100, 1_000_000),
     user_id: user.id,
-    account_id: account.id,
-    bank_rate: Faker::Number.decimal(1)
+    account_id: account.id
   )
-
 end
+
+Company.create(investment_id: Investment.first.id, name: 'Drinkbox', rate: 4.20, worth: 25000000)
+Company.create(investment_id: Investment.second.id, name: 'Starbucks', rate: 8.9, worth: 19000000)
+Company.create(investment_id: Investment.third.id, name: 'Monzo', rate: 5.6, worth: 50000000)
+Company.create(investment_id: Investment.fourth.id, name: 'Seabin', rate: 10.6, worth: 1000000)
+Company.create(investment_id: Investment.fifth.id, name: 'Source AI', rate: 9.4, worth: 3450000)
+

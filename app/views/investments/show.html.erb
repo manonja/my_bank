@@ -1,0 +1,11 @@
+<h3>Welcome to the invesments page, <%=@user.first_name %>!</h3> <br>
+
+<h4>Your total investment -- <%=@user.investments.sum("amount")%></h4>
+
+<h4>Invest in more  below!</h4>
+
+
+
+
+<p><%= link_to "Account summary", user_path(@user)%></p>
+
