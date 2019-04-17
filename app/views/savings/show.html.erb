@@ -5,20 +5,11 @@
 <h4>Make a saving below!</h4>
 
 
-  <%= form_for @saving, url: add_saving_path(@saving) do |f|%>
+  <%= form_for @saving do |f|%>
     <%= f.label :amount%>
     <%= f.number_field :amount%>
     <%= f.submit%>
   <% end%>
 
 
-
-
-
-
-
-
 <p><%= link_to "Account summary", user_path(@user)%></p>
-
-
-
