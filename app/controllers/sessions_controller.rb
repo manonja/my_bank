@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
   def login_form
   end
 
+
   def login
     user = User.find_by_email(params[:user][:email])
     if user && user.authenticate(params[:user][:password])
@@ -12,6 +13,7 @@ class SessionsController < ApplicationController
       redirect_to '/login_form'
     end
   end
+
   def logout
     session[:user_id] = nil
     redirect_to '/login_form'

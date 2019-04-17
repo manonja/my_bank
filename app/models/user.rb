@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+
+  # has_gravatar
+
   has_secure_password
   has_one :account
   has_one :saving
