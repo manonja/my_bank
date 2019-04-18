@@ -1,6 +1,6 @@
-<h3><%= @current_user.full_name if @current_user %>, you have: <%= current_user.account.amount%> <%= current_user.account.currency_name%> in your account. </h3>
+<h3><%= @current_user.first_name if @current_user %>, you have: <%= current_user.account.amount%> <%= current_user.account.currency_name%> in your account. </h3>
 
-<div class="card text-white bg-warning mb-3" style="width: 21.5em;margin:0 auto;">
+<div class="card text-white bg-warning mb-3" style="width: 31.5em;margin:0 auto;">
   <div class="card-block ml-5 ml-lg-0">
      <h2 class="card-title">Transfer money</h2>
      <p class="card-text">
@@ -23,5 +23,5 @@
 
 
 <div class="card-footer ml-5 ml-lg-0">
-  <%= button_to("Account summary", user_path(@user), method: :get, :class => "btn btn-light btn-sm") %>
+  <%= button_to("Account summary", user_path(@current_user), method: :get, :class => "btn btn-light btn-sm") %>
 </div>

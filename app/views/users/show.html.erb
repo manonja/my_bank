@@ -1,8 +1,10 @@
 <h3><%= @current_user.full_name if @current_user %></h3>
 
-<div class="card text-white bg-info mb-3" style="width: 21.5em;margin:0 auto;">
+<div class="card text-white bg-info mb-3" style="width: 31.5em;margin:0 auto;">
   <div class="card-block">
      <h4 class="card-title">Summary</h4>
+     <%= image_tag('http://i.imgur.com/dnzIrpy.jpg', size:"60x60") %>
+
      <p class="card-text ml-5 ml-lg-0">
        <h5>You have <%= current_user.account.amount %> <%= current_user.account.currency_name %> in your account now. </h5>
 
