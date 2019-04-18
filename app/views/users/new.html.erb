@@ -1,22 +1,61 @@
-<h1>Sign Up and get 100 cat coins </h1>
+<div class="container">
+  <center><h2>Get your 100 cat coins! </h2></center>
 
+            <%= form_for @user do |f| %>
+            <div class="field">
+                 <div class="row">
+                   <div class="col-md-4 offset-4">
+                    <%= f.label :first_name %>
+                    <%= f.text_field :first_name %> <br>
+                  </div>
+               </div>
+             </div>
+             <div class="field">
+               <div class="row">
+                 <div class="col-md-4 offset-4">
+                  <%= f.label :last_name %>
+                  <%= f.text_field :last_name %> <br>
+                </div>
+             </div>
+           </div>
+          <div class="field">
+             <div class="row">
+               <div class="col-md-4 offset-4">
+                <%= f.label :email %>
+                <%= f.text_field :email %> <br>
+              </div>
+           </div>
+         </div>
+        <div class="field">
+             <div class="row">
+               <div class="col-md-4 offset-4">
+                  <%= f.label :age %>
+                  <%= f.number_field :age %> <br>
+              </div>
+           </div>
+         </div>
+          <div class="field">
+               <div class="row">
+                 <div class="col-md-4 offset-4">
+                  <%= f.label :gender %>
+                  <%= f.text_field :gender %> <br>
+              </div>
+           </div>
+         </div>
+        <div class="field">
+             <div class="row">
+               <div class="col-md-4 offset-4">
+                <%= f.label :password %>
+                <%= f.password_field :password %>
+              </div>
+           </div>
+         </div>
+         <div class="field">
+              <div class="row">
+                <div class="col-md-4 offset-4">
+              <%= f.submit 'Sign Up'%>
+            </div>
+         </div>
+       </div>
 
-<%= form_for @user do |f| %>
-
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name %> <br>
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %> <br>
-  <%= f.label :email %>
-  <%= f.text_field :email %> <br>
-  <%= f.label :age %>
-  <%= f.number_field :age %> <br>
-  <%= f.label :gender %>
-  <%= f.text_field :gender %> <br>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-
-
-  <%= f.submit 'Sign Up'%>
-
-<%end %>
+            <%end %>

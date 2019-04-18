@@ -1,5 +1,9 @@
-<h3>Make a new saving -- <%=@user.first_name %>!</h3> <br>
-
+<div class="card border-info mb-3" style="width: 31.5em;margin:0 auto;">
+  <div class="card-block ml-5 ml-lg-0">
+     <h2 class="card-title">Make a new saving, <%=@user.first_name %>!</h2>
+     <p class="card-text">
+       <h5>Your balance: <%=@user.account.amount%></h5><br>
+       <h5>Your total Savings: <%=@saving.amount%></h5><br>
 
 <h4>Balance: <%= @current_user.account.amount %></h4>
 <br>
@@ -7,5 +11,10 @@
 <br>
 <%= button_to("Make a saving!", new_saving_path, method: :get, :class => "btn btn-success") %>
 <br>
+    
+  </div>
+</div>
 
-<p><%= link_to "Account summary", user_path(@user)%></p>
+<div class="card-footer ml-5 ml-lg-0">
+  <%= button_to("Account summary", user_path(@current_user), method: :get, :class => "btn btn-light btn-sm") %>
+</div>

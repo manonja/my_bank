@@ -200,3 +200,15 @@ show	/Users/manon/Development/code/my_bank/app/controllers/transfers_controller.
 new	/Users/manon/Development/code/my_bank/app/controllers/transfers_controller.rb	/^  def new$/;"	method	line:10	class:TransfersController
 create	/Users/manon/Development/code/my_bank/app/controllers/transfers_controller.rb	/^  def create$/;"	method	line:15	class:TransfersController
 transfer_params	/Users/manon/Development/code/my_bank/app/controllers/transfers_controller.rb	/^  def transfer_params$/;"	method	line:30	class:TransfersController
+html, body	/Users/manon/Development/code/flatiron_bank/my_bank/app/assets/stylesheets/home.scss	/^html, body{$/;"	function	line:4
+body	/Users/manon/Development/code/flatiron_bank/my_bank/app/assets/stylesheets/home.scss	/^body {$/;"	function	line:7
+UsersController	/Users/manon/Development/code/flatiron_bank/my_bank/app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	class	line:1
+index	/Users/manon/Development/code/flatiron_bank/my_bank/app/controllers/users_controller.rb	/^  def index$/;"	method	line:2	class:UsersController
+new	/Users/manon/Development/code/flatiron_bank/my_bank/app/controllers/users_controller.rb	/^  def new$/;"	method	line:6	class:UsersController
+show	/Users/manon/Development/code/flatiron_bank/my_bank/app/controllers/users_controller.rb	/^  def show$/;"	method	line:11	class:UsersController
+create	/Users/manon/Development/code/flatiron_bank/my_bank/app/controllers/users_controller.rb	/^  def create$/;"	method	line:15	class:UsersController
+profile	/Users/manon/Development/code/flatiron_bank/my_bank/app/controllers/users_controller.rb	/^  def profile$/;"	method	line:31	class:UsersController
+edit	/Users/manon/Development/code/flatiron_bank/my_bank/app/controllers/users_controller.rb	/^  def edit$/;"	method	line:38	class:UsersController
+update	/Users/manon/Development/code/flatiron_bank/my_bank/app/controllers/users_controller.rb	/^  def update$/;"	method	line:43	class:UsersController
+delete	/Users/manon/Development/code/flatiron_bank/my_bank/app/controllers/users_controller.rb	/^  def delete$/;"	method	line:49	class:UsersController
+user_params	/Users/manon/Development/code/flatiron_bank/my_bank/app/controllers/users_controller.rb	/^  def user_params$/;"	method	line:55	class:UsersController
