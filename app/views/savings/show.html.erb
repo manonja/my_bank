@@ -1,15 +1,20 @@
-<h3>Make a new saving -- <%=@user.first_name %>!</h3> <br>
+<div class="card border-info mb-3" style="width: 31.5em;margin:0 auto;">
+  <div class="card-block ml-5 ml-lg-0">
+     <h2 class="card-title">Make a new saving, <%=@user.first_name %>!</h2>
+     <p class="card-text">
+       <h5>Your balance: <%=@user.account.amount%></h5><br>
+       <h5>Your total Savings: <%=@saving.amount%></h5><br>
 
-<h4>Your total Savings -- <%=@saving.amount%></h4>
+       <h4>Transfer money below to your saving account</h4><br>
 
-<h4>Make a saving below!</h4>
+        <%= form_for @saving do |f|%>
+          <%= f.label :amount%>
+          <%= f.number_field :amount%>
+          <%= f.submit 'Transfer to savings!'%>
+        <% end%>
+  </div>
+</div>
 
-
-  <%= form_for @saving do |f|%>
-    <%= f.label :amount%>
-    <%= f.number_field :amount%>
-    <%= f.submit%>
-  <% end%>
-
-
-<p><%= link_to "Account summary", user_path(@user)%></p>
+<div class="card-footer ml-5 ml-lg-0">
+  <%= button_to("Account summary", user_path(@user), method: :get, :class => "btn btn-light btn-sm") %>
+</div>

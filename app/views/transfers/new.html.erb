@@ -1,18 +1,27 @@
-<h3>What you got: <%= current_user.account.amount%> <%= current_user.account.currency_name%> </h3>
+<h3><%= @current_user.full_name if @current_user %>, you have: <%= current_user.account.amount%> <%= current_user.account.currency_name%> in your account. </h3>
 
-<h1>New Transfer</h1>
+<div class="card text-white bg-warning mb-3" style="width: 21.5em;margin:0 auto;">
+  <div class="card-block ml-5 ml-lg-0">
+     <h2 class="card-title">Transfer money</h2>
+     <p class="card-text">
 
-<%= form_for @transfer do |f| %>
+      <%= form_for @transfer do |f| %>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %> <br>
+        <%= f.label :name %>
+        <%= f.text_field :name %> <br>
 
-  <%= f.label :receiver %>
-  <%= f.collection_select :receiver_id, @users, :id, :full_name %> <br>
+        <%= f.label :receiver %>
+        <%= f.collection_select :receiver_id, @users, :id, :full_name %> <br>
 
-  <%= f.label :amount %>
-  <%= f.number_field :amount %> <br>
+        <%= f.label :amount %>
+        <%= f.number_field :amount %> <br>
 
-  <%= f.submit 'Send money!'%>
+        <%= f.submit 'Send money!'%>
 
- <%end%>
+       <%end%>
+</div>
+
+
+<div class="card-footer ml-5 ml-lg-0">
+  <%= button_to("Account summary", user_path(@user), method: :get, :class => "btn btn-light btn-sm") %>
+</div>
