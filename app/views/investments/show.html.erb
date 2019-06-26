@@ -7,7 +7,7 @@
 <%= button_to("Invest now!", new_investment_path(@user), method: :get, :class => "btn btn-success") %>
     <h4>Your total investment: <%=@user.investments.sum("amount")%></h4>
 
-    <h4>Invest in more  below!</h4>
+    <h4>Invest more below!</h4>
   </div>
 </div>
 

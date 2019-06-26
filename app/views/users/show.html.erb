@@ -8,20 +8,22 @@
      <p class="card-text ml-5 ml-lg-0">
        <h5>You have <%= current_user.account.amount %> <%= current_user.account.currency_name %> in your account now. </h5>
 
-
         <p>You have <%= current_user.saving.amount %> <%= current_user.account.currency_name %> savings for now. </p> <%= button_to("Go to your savings", saving_path(@user), method: :get, :class => "btn btn-light btn-sm") %>
-
+        <br>
         <% if current_user.investments[0] == nil %>
           <p>You don't have any investments yet, <span><%= button_to("make one now!", investment_path(@user), method: :get, :class => "btn btn-light btn-sm") %></span>
          </p>
         <% else %>
+          <p>Your investments:</p>
           <% current_user.investments.each do |investment| %>
             <%= investment.amount %> <%= current_user.account.currency_name %>
           <% end %>
+          <p><%= button_to("Make a new investment", investment_path(@current_user), method: :get, :class => "btn btn-light btn-sm") %></p>   
         <%end %>
 
         <h5>Send money to your friends :) </h5>
         <%= button_to("Transfer money", new_transfer_path, method: :get, :class => "btn btn-light btn-sm") %>
+        <br>
 
   </div>
 </div>

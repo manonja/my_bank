@@ -13,9 +13,11 @@
           <p>You don't have any investments yet, <span><%= button_to("make one now!", investment_path(@current_user), method: :get, :class => "btn btn-light btn-sm") %></span>
          </p>
         <% else %>
+        <p>Your investments:</p>
           <% current_user.investments.each do |investment| %>
-            <%= investment.amount %> <%= current_user.account.currency_name %>
+           <%= investment.amount %> <%= current_user.account.currency_name %>     
           <% end %>
+          <p><%= button_to("make one now!", investment_path(@current_user), method: :get, :class => "btn btn-light btn-sm") %></p>   
         <%end %>
 
         <h5>Send money to your friends :) </h5>

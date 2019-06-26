@@ -2,7 +2,7 @@ class InvestmentsController < ApplicationController
 
     def new
         @investment = Investment.new
-        #! shit way but it works
+        #! not the best way but it works
         @drinkbox = Company.all.first
         @starbucks = Company.all.second
         @monzo = Company.all.third
@@ -32,7 +32,7 @@ class InvestmentsController < ApplicationController
             @investment.update(amount: @investment.amount - @stocks)
             account = @current_user.account
             account.update(amount: account.amount - @stocks)
-            redirect_to investment_path(@current_user)
+            redirect_to user_path(@current_user)
         else
             redirect_to new_investment_path(@current_user)
         end

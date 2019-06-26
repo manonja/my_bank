@@ -10,11 +10,9 @@ class SavingsController < ApplicationController
         @saving = Saving.new(saving_params)
         @saving.user_id = current_user.id
         @saving.account_id = current_user.account.id
-        #* Saved money is in the variable
         @saved_money = params[:saving][:amount].to_i
         # * Logic to add money to your savings
-        if @saved_money <= @current_user.account.amount
-            
+        if @saved_money <= @current_user.account.amount    
             @saving.update(amount: @saving.amount - @saved_money)
             account = @current_user.account
             account.update(amount: account.amount - @saved_money)
@@ -24,21 +22,7 @@ class SavingsController < ApplicationController
         end
         
     end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     def update
         @saving = Saving.find(params[:id])
         @saving.update(saving_params)

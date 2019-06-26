@@ -30,12 +30,8 @@ class AccountsController < ApplicationController
     redirect_to @account
   end
 
-  def delete
-
-  end
 
   private
-
   def account_params
     params.require(:account).permit(:email_adress, :currency_name, :amount)
   end
